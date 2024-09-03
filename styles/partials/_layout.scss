@@ -1,0 +1,84 @@
+@use "./colors" as *;
+@use "./variables" as *;
+@use "./mixinis" as *;
+
+// reusable classes
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+.des-blue {
+  background-color: $desaturated-blue;
+}
+
+body {
+  background-color: $very-dark-blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: $mobile-min-h;
+}
+main {
+  gap: $grid-mobile-gap;
+  width: 100%;
+  padding: 1.5rem;
+
+  section {
+    border-radius: $rounded-15;
+    background-position: 88% -7%;
+    background-repeat: no-repeat;
+    @include activityBg();
+    &.profil-section,
+    > div {
+      background-color: $dark-blue;
+      border-radius: $rounded-15;
+    }
+  }
+  .activity {
+    > div {
+      height: 100%;
+      padding: $padding-mobile-act;
+    }
+    padding-top: $mtop-mobile-activity;
+    .title-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: 48rem) {
+  body {
+    min-height: $desktop-min-h;
+  }
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    gap: $grid-desktop-gap;
+    max-width: $desktop-main-max-w;
+    min-height: $desktop-main-min-h;
+
+    .profil-section {
+      grid-row: 1/3;
+    }
+    .activity {
+      padding-top: $mtop-desktop-activity;
+      > div {
+        padding: $padding-desktop-act;
+      }
+      .details {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}

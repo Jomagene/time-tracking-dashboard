@@ -70,10 +70,112 @@ p.title {
 @media (min-width: 64rem) {
   h1 {
     font-size: 2.5rem;
-    font-weight: 300;
   }
   p.count {
     font-size: 3.5rem;
     font-weight: 400;
+  }
+}
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.des-blue {
+  background-color: hsl(235, 45%, 61%);
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 91.8125rem;
+}
+
+main {
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1.5rem;
+}
+main section {
+  border-radius: 0.9375rem;
+  background-position: 88% -7%;
+  background-repeat: no-repeat;
+}
+main section.work {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url("../../images/icon-work.svg");
+}
+main section.play {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url("../../images/icon-play.svg");
+}
+main section.study {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url("../../images/icon-study.svg");
+}
+main section.exercise {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url("../../images/icon-exercise.svg");
+}
+main section.social {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url("../../images/icon-social.svg");
+}
+main section.self-care {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url("../../images/icon-self-care.svg");
+}
+main section.profil-section,
+main section > div {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 0.9375rem;
+}
+main .activity {
+  padding-top: 2.3775rem;
+}
+main .activity > div {
+  height: 100%;
+  padding: 1.5rem;
+}
+main .activity .title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .activity .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 48rem) {
+  body {
+    min-height: 64rem;
+  }
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.875rem;
+    max-width: 69.375rem;
+    min-height: 32.375rem;
+  }
+  main .profil-section {
+    grid-row: 1/3;
+  }
+  main .activity {
+    padding-top: 2.8125rem;
+  }
+  main .activity > div {
+    padding: 1.875rem;
+  }
+  main .activity .details {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }/*# sourceMappingURL=style.css.map */

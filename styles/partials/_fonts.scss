@@ -1,4 +1,5 @@
 @use "./colors" as *;
+
 body {
   font-family: "Rubik", sans-serif;
 }
@@ -30,7 +31,6 @@ p {
 @media (min-width: 64rem) {
   h1 {
     font-size: 2.5rem;
-    font-weight: 300;
   }
 
   p.count {
