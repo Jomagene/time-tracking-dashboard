@@ -1,0 +1,39 @@
+@use "./colors" as *;
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+ul li {
+  list-style: none;
+}
+
+span {
+  font-size: 0.9375rem;
+  color: $pale-blue;
+}
+
+p {
+  font-size: 1.125rem;
+  &.count {
+    font-size: 2rem;
+  }
+  &.title {
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 64rem) {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+
+  p.count {
+    font-size: 3.5rem;
+  }
+}
