@@ -6,9 +6,11 @@
 .grid {
   display: grid;
 }
+
 .flex {
   display: flex;
 }
+
 .des-blue {
   background-color: $desaturated-blue;
 }
@@ -38,6 +40,7 @@ main {
       border-radius: $rounded-15;
     }
   }
+
   .activity {
     padding-top: $mtop-mobile-activity;
     > div {
@@ -57,6 +60,7 @@ main {
       flex-wrap: wrap;
     }
   }
+
   .profil-section {
     display: flex;
     flex-direction: column;
