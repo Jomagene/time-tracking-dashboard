@@ -1,5 +1,7 @@
 let menu = document.querySelectorAll("li");
 
+let dataDetail = document.querySelectorAll(".details");
+
 async function fetchData() {
   try {
     let response = await fetch("../data.json");
@@ -15,11 +17,21 @@ async function fetchData() {
   }
 }
 
-async function handleClick() {
-  let data = await fetchData();
+async function handleClick(item) {
+  let target = item.target.innerText.toLowerCase();
+  let targetLabel =
+    target == "daily" ? "Day" : target == "weekly" ? "Week" : "Month";
 
+  let data = await fetchData();
   if (data) {
-    console.log(data);
+    for (let i = 0; i < data.length; i++) {
+      dataDetail[
+        i
+      ].firstElementChild.innerText = `${data[i].timeframes[target].current}hrs`;
+      dataDetail[
+        i
+      ].lastElementChild.innerText = `Last ${targetLabel} - ${data[i].timeframes[target].previous}hrs`;
+    }
   }
 }
 
