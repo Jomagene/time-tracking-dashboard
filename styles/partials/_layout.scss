@@ -15,6 +15,10 @@
   background-color: $desaturated-blue;
 }
 
+.active {
+  color: $white;
+}
+
 body {
   background-color: $very-dark-blue;
   color: white;
@@ -85,8 +89,23 @@ main {
       display: flex;
       justify-content: space-between;
       max-height: 10.25rem;
+      color: $pale-blue;
     }
   }
+}
+
+li:hover {
+  color: white;
+}
+
+li:hover,
+.details:hover,
+.title-container img:hover {
+  cursor: pointer;
+}
+
+.activity > div:hover {
+  background-color: $desaturated-blue;
 }
 
 @media (min-width: 48rem) {

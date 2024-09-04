@@ -18,12 +18,21 @@ async function fetchData() {
 }
 
 async function handleClick(item) {
-  let target = item.target.innerText.toLowerCase();
+  let element = item.target;
+  let target = element.innerText.toLowerCase();
   let targetLabel =
     target == "daily" ? "Day" : target == "weekly" ? "Week" : "Month";
 
   let data = await fetchData();
+
+  // Get all siblings
+  const siblings = Array.from(menu).filter((child) => child != element);
+  siblings.forEach((child) => {
+    child.classList.remove("active");
+  });
+
   if (data) {
+    item.target.classList.toggle("active");
     for (let i = 0; i < data.length; i++) {
       dataDetail[
         i

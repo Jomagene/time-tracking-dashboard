@@ -88,6 +88,10 @@ p.title {
   background-color: hsl(235, 45%, 61%);
 }
 
+.active {
+  color: white;
+}
+
 body {
   background-color: hsl(226, 43%, 10%);
   color: white;
@@ -179,6 +183,21 @@ main .profil-section ul {
   display: flex;
   justify-content: space-between;
   max-height: 10.25rem;
+  color: hsl(236, 100%, 87%);
+}
+
+li:hover {
+  color: white;
+}
+
+li:hover,
+.details:hover,
+.title-container img:hover {
+  cursor: pointer;
+}
+
+.activity > div:hover {
+  background-color: hsl(235, 45%, 61%);
 }
 
 @media (min-width: 48rem) {
