@@ -3,26 +3,26 @@
 @mixin activityBg() {
   &.work {
     background-color: $light-red-w;
-    background-image: url("../../images/icon-work.svg");
+    background-image: url("../images/icon-work.svg");
   }
   &.play {
     background-color: $soft-blue;
-    background-image: url("../../images/icon-play.svg");
+    background-image: url("../images/icon-play.svg");
   }
   &.study {
     background-color: $light-red-s;
-    background-image: url("../../images/icon-study.svg");
+    background-image: url("../images/icon-study.svg");
   }
   &.exercise {
     background-color: $lime-green;
-    background-image: url("../../images/icon-exercise.svg");
+    background-image: url("../images/icon-exercise.svg");
   }
   &.social {
     background-color: $violet;
-    background-image: url("../../images/icon-social.svg");
+    background-image: url("../images/icon-social.svg");
   }
   &.self-care {
     background-color: $soft-orange;
-    background-image: url("../../images/icon-self-care.svg");
+    background-image: url("../images/icon-self-care.svg");
   }
 }

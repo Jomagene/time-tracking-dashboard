@@ -116,27 +116,27 @@ main section {
 }
 main section.work {
   background-color: hsl(15, 100%, 70%);
-  background-image: url("../../images/icon-work.svg");
+  background-image: url("../images/icon-work.svg");
 }
 main section.play {
   background-color: hsl(195, 74%, 62%);
-  background-image: url("../../images/icon-play.svg");
+  background-image: url("../images/icon-play.svg");
 }
 main section.study {
   background-color: hsl(348, 100%, 68%);
-  background-image: url("../../images/icon-study.svg");
+  background-image: url("../images/icon-study.svg");
 }
 main section.exercise {
   background-color: hsl(145, 58%, 55%);
-  background-image: url("../../images/icon-exercise.svg");
+  background-image: url("../images/icon-exercise.svg");
 }
 main section.social {
   background-color: hsl(264, 64%, 52%);
-  background-image: url("../../images/icon-social.svg");
+  background-image: url("../images/icon-social.svg");
 }
 main section.self-care {
   background-color: hsl(43, 84%, 65%);
-  background-image: url("../../images/icon-self-care.svg");
+  background-image: url("../images/icon-self-care.svg");
 }
 main section.profil-section,
 main section > div {
