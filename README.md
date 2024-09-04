@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://jomagene.github.io/time-tracking-dashboard/)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/time-tracking-dashboard-with-html-sass-and-javascriptasync-await-zbZLlwfE2-)
+- Live Site URL: [My live](https://jomagene.github.io/time-tracking-dashboard/)
 
 ## My process
 
