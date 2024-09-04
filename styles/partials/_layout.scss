@@ -20,11 +20,12 @@ body {
   justify-content: center;
   align-items: center;
   min-height: $mobile-min-h;
+  padding: 0 $padding-24;
 }
+
 main {
   gap: $grid-mobile-gap;
   width: 100%;
-  padding: 1.5rem;
 
   section {
     border-radius: $rounded-15;
@@ -47,7 +48,7 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-bottom: 0.34375rem;
+      padding-bottom: $padding-5;
     }
     .details {
       display: flex;
@@ -60,7 +61,7 @@ main {
     display: flex;
     flex-direction: column;
     img {
-      height: 4.875rem;
+      height: $image-mobile-h;
       border: 2px white solid;
       border-radius: $rounded;
     }
@@ -71,14 +72,15 @@ main {
       align-items: center;
       background-color: $blue;
       border-radius: $rounded-15;
-      padding: 1.875rem;
+      padding: $padding-30;
     }
 
     ul {
       flex: 70;
-      padding: 1.875rem;
+      padding: $padding-30;
       display: flex;
       justify-content: space-between;
+      max-height: 10.25rem;
     }
   }
 }
@@ -109,7 +111,7 @@ main {
 
     .profil-section {
       img {
-        height: 4rem;
+        height: $image-desktop-h;
       }
       figure {
         flex: 354;
@@ -117,13 +119,11 @@ main {
         align-items: flex-start;
       }
       figcaption {
-        padding-bottom: 2rem;
+        padding-bottom: $padding-32;
       }
       ul {
         flex: 164;
         flex-direction: column;
-        justify-content: flex-start;
-        gap: 1.3125rem;
       }
     }
   }
