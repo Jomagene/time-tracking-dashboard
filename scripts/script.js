@@ -5,7 +5,7 @@ let data;
 
 async function fetchData() {
   try {
-    let response = await fetch("../data.json");
+    let response = await fetch("./../data.json");
 
     if (!response.ok) {
       throw new Error("HTTP error : " + response.status);
@@ -24,7 +24,11 @@ function handleClick(item) {
 
   let target = activeElement.innerText.toLowerCase();
   let targetLabel =
-    target == "daily" ? "Day" : target == "weekly" ? "Week" : "Month";
+    target == "daily"
+      ? "Yesterday"
+      : target == "weekly"
+      ? "Last Week"
+      : "Last Month";
 
   menu.querySelectorAll("li").forEach((child) => {
     child.classList.remove("active");
@@ -35,7 +39,7 @@ function handleClick(item) {
     dataDetail.forEach((detail, i) => {
       const { current, previous } = data[i].timeframes[target];
       detail.firstElementChild.innerText = `${current}hrs`;
-      detail.lastElementChild.innerText = `Last ${targetLabel} - ${previous}hrs`;
+      detail.lastElementChild.innerText = `${targetLabel} - ${previous}hrs`;
     });
   }
 }

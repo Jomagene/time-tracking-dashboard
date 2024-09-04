@@ -31,7 +31,7 @@ body {
 
 main {
   gap: $grid-mobile-gap;
-  width: 100%;
+  width: $max;
 
   section {
     border-radius: $rounded-15;
@@ -50,14 +50,14 @@ main {
   .activity {
     padding-top: $mtop-mobile-activity;
     > div {
-      height: 100%;
+      height: $max;
       padding: $padding-mobile-act;
     }
     .title-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-bottom: $padding-10;
+      padding-bottom: $padding-19;
     }
     .details {
       display: flex;
@@ -97,7 +97,7 @@ main {
       padding: $padding-24 $padding-32 $padding-30;
       display: flex;
       justify-content: space-between;
-      max-height: 10.25rem;
+      max-height: $ul-max-h;
       color: $desaturated-blue;
     }
   }
