@@ -32,14 +32,11 @@ function handleClick(item) {
 
   if (data) {
     activeElement.classList.add("active");
-    for (let i = 0; i < data.length; i++) {
-      dataDetail[
-        i
-      ].firstElementChild.innerText = `${data[i].timeframes[target].current}hrs`;
-      dataDetail[
-        i
-      ].lastElementChild.innerText = `Last ${targetLabel} - ${data[i].timeframes[target].previous}hrs`;
-    }
+    dataDetail.forEach((detail, i) => {
+      const { current, previous } = data[i].timeframes[target];
+      detail.firstElementChild.innerText = `${current}hrs`;
+      detail.lastElementChild.innerText = `Last ${targetLabel} - ${previous}hrs`;
+    });
   }
 }
 
