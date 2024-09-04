@@ -6,11 +6,13 @@ body {
 
 h1 {
   font-size: 1.5rem;
+  line-height: 1.25;
   font-weight: 300;
 }
 
 ul li {
   list-style: none;
+  font-size: 1.125rem;
 }
 
 span {
@@ -23,6 +25,7 @@ p {
   &.count {
     font-size: 2rem;
     font-weight: 300;
+    line-height: 1.25;
   }
   &.title {
     font-weight: 500;

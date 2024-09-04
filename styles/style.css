@@ -45,11 +45,13 @@ body {
 
 h1 {
   font-size: 1.5rem;
+  line-height: 1.25;
   font-weight: 300;
 }
 
 ul li {
   list-style: none;
+  font-size: 1.125rem;
 }
 
 span {
@@ -63,6 +65,7 @@ p {
 p.count {
   font-size: 2rem;
   font-weight: 300;
+  line-height: 1.25;
 }
 p.title {
   font-weight: 500;
@@ -108,7 +111,7 @@ main {
 }
 main section {
   border-radius: 0.9375rem;
-  background-position: 88% -7%;
+  background-position: 90% -5%;
   background-repeat: no-repeat;
 }
 main section.work {
@@ -151,7 +154,7 @@ main .activity .title-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 0.34375rem;
+  padding-bottom: 1.1875rem;
 }
 main .activity .details {
   display: flex;
@@ -159,14 +162,21 @@ main .activity .details {
   align-items: center;
   flex-wrap: wrap;
 }
+main .activity .count {
+  padding-bottom: 0.22rem;
+}
 main .profil-section {
   display: flex;
   flex-direction: column;
 }
 main .profil-section img {
   height: 4rem;
-  border: 2px white solid;
+  border: 3px white solid;
   border-radius: 50%;
+  margin: 0 1.875rem;
+}
+main .profil-section figcaption {
+  margin: 0 2rem;
 }
 main .profil-section figure {
   flex: 133;
@@ -175,15 +185,15 @@ main .profil-section figure {
   align-items: center;
   background-color: hsl(246, 80%, 60%);
   border-radius: 0.9375rem;
-  padding: 1.875rem;
+  padding: 2.125rem 0;
 }
 main .profil-section ul {
   flex: 70;
-  padding: 1.875rem;
+  padding: 1.5rem 2rem 1.875rem;
   display: flex;
   justify-content: space-between;
   max-height: 10.25rem;
-  color: hsl(236, 100%, 87%);
+  color: hsl(235, 45%, 61%);
 }
 
 li:hover {
@@ -217,14 +227,14 @@ li:hover,
     padding-top: 2.8125rem;
   }
   main .activity > div {
-    padding: 1.875rem;
+    padding: 1.6875rem 1.875rem 1.875rem;
   }
   main .activity .details {
     flex-direction: column;
     align-items: flex-start;
   }
   main .profil-section img {
-    height: 4.875rem;
+    height: 5.25rem;
   }
   main .profil-section figure {
     flex: 354;
@@ -232,7 +242,7 @@ li:hover,
     align-items: flex-start;
   }
   main .profil-section figcaption {
-    padding-bottom: 2rem;
+    padding-bottom: 2.5625rem;
   }
   main .profil-section ul {
     flex: 164;

@@ -35,9 +35,11 @@ main {
 
   section {
     border-radius: $rounded-15;
-    background-position: 88% -7%;
+    background-position: 90% -5%;
     background-repeat: no-repeat;
+
     @include activityBg();
+
     &.profil-section,
     > div {
       background-color: $dark-blue;
@@ -55,13 +57,16 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-bottom: $padding-5;
+      padding-bottom: $padding-10;
     }
     .details {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
+    }
+    .count {
+      padding-bottom: 0.22rem;
     }
   }
 
@@ -70,8 +75,12 @@ main {
     flex-direction: column;
     img {
       height: $image-mobile-h;
-      border: 2px white solid;
+      border: 3px white solid;
       border-radius: $rounded;
+      margin: 0 $padding-30;
+    }
+    figcaption {
+      margin: 0 $padding-32;
     }
     figure {
       flex: 133;
@@ -80,16 +89,16 @@ main {
       align-items: center;
       background-color: $blue;
       border-radius: $rounded-15;
-      padding: $padding-30;
+      padding: $padding-34 0;
     }
 
     ul {
       flex: 70;
-      padding: $padding-30;
+      padding: $padding-24 $padding-32 $padding-30;
       display: flex;
       justify-content: space-between;
       max-height: 10.25rem;
-      color: $pale-blue;
+      color: $desaturated-blue;
     }
   }
 }
@@ -142,7 +151,7 @@ li:hover,
         align-items: flex-start;
       }
       figcaption {
-        padding-bottom: $padding-32;
+        padding-bottom: $padding-40;
       }
       ul {
         flex: 164;
