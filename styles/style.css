@@ -62,6 +62,7 @@ p {
 }
 p.count {
   font-size: 2rem;
+  font-weight: 300;
 }
 p.title {
   font-weight: 500;
@@ -73,7 +74,6 @@ p.title {
   }
   p.count {
     font-size: 3.5rem;
-    font-weight: 400;
   }
 }
 .grid {
@@ -147,12 +147,37 @@ main .activity .title-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 0.34375rem;
 }
 main .activity .details {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+main .profil-section {
+  display: flex;
+  flex-direction: column;
+}
+main .profil-section img {
+  height: 4.875rem;
+  border: 2px white solid;
+  border-radius: 50%;
+}
+main .profil-section figure {
+  flex: 133;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 0.9375rem;
+  padding: 1.875rem;
+}
+main .profil-section ul {
+  flex: 70;
+  padding: 1.875rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (min-width: 48rem) {
@@ -177,5 +202,22 @@ main .activity .details {
   main .activity .details {
     flex-direction: column;
     align-items: flex-start;
+  }
+  main .profil-section img {
+    height: 4rem;
+  }
+  main .profil-section figure {
+    flex: 354;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .profil-section figcaption {
+    padding-bottom: 2rem;
+  }
+  main .profil-section ul {
+    flex: 164;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.3125rem;
   }
 }/*# sourceMappingURL=style.css.map */

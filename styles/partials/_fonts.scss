@@ -22,6 +22,7 @@ p {
   font-size: 1.125rem;
   &.count {
     font-size: 2rem;
+    font-weight: 300;
   }
   &.title {
     font-weight: 500;
@@ -35,6 +36,5 @@ p {
 
   p.count {
     font-size: 3.5rem;
-    font-weight: 400;
   }
 }

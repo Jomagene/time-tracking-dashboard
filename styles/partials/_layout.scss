@@ -38,21 +38,47 @@ main {
     }
   }
   .activity {
+    padding-top: $mtop-mobile-activity;
     > div {
       height: 100%;
       padding: $padding-mobile-act;
     }
-    padding-top: $mtop-mobile-activity;
     .title-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding-bottom: 0.34375rem;
     }
     .details {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
+    }
+  }
+  .profil-section {
+    display: flex;
+    flex-direction: column;
+    img {
+      height: 4.875rem;
+      border: 2px white solid;
+      border-radius: $rounded;
+    }
+    figure {
+      flex: 133;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $blue;
+      border-radius: $rounded-15;
+      padding: 1.875rem;
+    }
+
+    ul {
+      flex: 70;
+      padding: 1.875rem;
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
@@ -78,6 +104,26 @@ main {
       .details {
         flex-direction: column;
         align-items: flex-start;
+      }
+    }
+
+    .profil-section {
+      img {
+        height: 4rem;
+      }
+      figure {
+        flex: 354;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      figcaption {
+        padding-bottom: 2rem;
+      }
+      ul {
+        flex: 164;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1.3125rem;
       }
     }
   }
