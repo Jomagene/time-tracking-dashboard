@@ -1,6 +1,7 @@
-let menu = document.querySelectorAll("li");
-
+let menu = document.querySelector("ul");
 let dataDetail = document.querySelectorAll(".details");
+
+let data;
 
 async function fetchData() {
   try {
@@ -10,29 +11,27 @@ async function fetchData() {
       throw new Error("HTTP error : " + response.status);
     }
 
-    const data = await response.json();
-    return data;
+    data = await response.json();
   } catch (error) {
     console.error(`Could not get data: ${error}`);
   }
 }
 
-async function handleClick(item) {
-  let element = item.target;
-  let target = element.innerText.toLowerCase();
+function handleClick(item) {
+  let activeElement = item.target;
+
+  if (activeElement.tagName !== "LI") return;
+
+  let target = activeElement.innerText.toLowerCase();
   let targetLabel =
     target == "daily" ? "Day" : target == "weekly" ? "Week" : "Month";
 
-  let data = await fetchData();
-
-  // Get all siblings
-  const siblings = Array.from(menu).filter((child) => child != element);
-  siblings.forEach((child) => {
+  menu.querySelectorAll("li").forEach((child) => {
     child.classList.remove("active");
   });
 
   if (data) {
-    item.target.classList.toggle("active");
+    activeElement.classList.add("active");
     for (let i = 0; i < data.length; i++) {
       dataDetail[
         i
@@ -44,6 +43,5 @@ async function handleClick(item) {
   }
 }
 
-for (let item of menu) {
-  item.addEventListener("click", handleClick);
-}
+menu.addEventListener("click", handleClick);
+fetchData();
