@@ -98,16 +98,20 @@ main {
       display: flex;
       justify-content: space-between;
       max-height: $ul-max-h;
-      color: $desaturated-blue;
     }
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    color: $desaturated-blue;
   }
 }
 
-li:hover {
+button:hover {
   color: white;
 }
 
-li:hover,
+button:hover,
 .details:hover,
 .title-container img:hover {
   cursor: pointer;

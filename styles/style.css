@@ -193,14 +193,18 @@ main .profil-section ul {
   display: flex;
   justify-content: space-between;
   max-height: 10.25rem;
+}
+main button {
+  background-color: transparent;
+  border: none;
   color: hsl(235, 45%, 61%);
 }
 
-li:hover {
+button:hover {
   color: white;
 }
 
-li:hover,
+button:hover,
 .details:hover,
 .title-container img:hover {
   cursor: pointer;

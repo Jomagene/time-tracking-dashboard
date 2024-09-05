@@ -20,7 +20,7 @@ async function fetchData() {
 function handleClick(item) {
   let activeElement = item.target;
 
-  if (activeElement.tagName !== "LI") return;
+  if (activeElement.tagName !== "BUTTON") return;
 
   let target = activeElement.innerText.toLowerCase();
   let targetLabel =
@@ -30,7 +30,7 @@ function handleClick(item) {
       ? "Last Week"
       : "Last Month";
 
-  menu.querySelectorAll("li").forEach((child) => {
+  menu.querySelectorAll("button").forEach((child) => {
     child.classList.remove("active");
   });
 

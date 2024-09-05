@@ -19,26 +19,44 @@
   </head>
   <body>
     <main class="grid">
-      <section class="profil-section">
+      <section class="profil-section" aria-labelledby="profile-heading">
         <figure>
-          <img src="./images/image-jeremy.png" alt="Jeremy profile picture" />
+          <img
+            src="./images/image-jeremy.png"
+            alt="Profile picture of Jeremy Robson" />
           <figcaption>
             <span>Report for</span>
             <h1>Jeremy Robson</h1>
           </figcaption>
         </figure>
-        <ul>
-          <li>Daily</li>
-          <li class="active">Weekly</li>
-          <li>Monthly</li>
+        <ul aria-label="Timeframes">
+          <li>
+            <button type="button" aria-pressed="false" tabindex="0">
+              Daily
+            </button>
+          </li>
+          <li>
+            <button
+              class="active"
+              type="button"
+              aria-pressed="true"
+              tabindex="0">
+              Weekly
+            </button>
+          </li>
+          <li>
+            <button type="button" aria-pressed="false" tabindex="0">
+              Monthly
+            </button>
+          </li>
         </ul>
       </section>
 
-      <section class="activity work">
+      <section class="activity work" aria-labelledby="work-title">
         <div>
           <div class="title-container">
             <p class="title">Work</p>
-            <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            <img src="./images/icon-ellipsis.svg" alt="More options for Work" />
           </div>
           <div class="details">
             <p class="count">32hrs</p>
@@ -46,11 +64,11 @@
           </div>
         </div>
       </section>
-      <section class="activity play">
+      <section class="activity play" aria-labelledby="play-title">
         <div>
           <div class="title-container">
             <p class="title">Play</p>
-            <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            <img src="./images/icon-ellipsis.svg" alt="More options for Play" />
           </div>
           <div class="details">
             <p class="count">10hrs</p>
@@ -58,11 +76,13 @@
           </div>
         </div>
       </section>
-      <section class="activity study">
+      <section class="activity study" aria-labelledby="study-title">
         <div>
           <div class="title-container">
             <p class="title">Study</p>
-            <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            <img
+              src="./images/icon-ellipsis.svg"
+              alt="More options for Study" />
           </div>
           <div class="details">
             <p class="count">4hrs</p>
@@ -70,11 +90,13 @@
           </div>
         </div>
       </section>
-      <section class="activity exercise">
+      <section class="activity exercise" aria-labelledby="exercise-title">
         <div>
           <div class="title-container">
             <p class="title">Exercise</p>
-            <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            <img
+              src="./images/icon-ellipsis.svg"
+              alt="More options for Exercise" />
           </div>
           <div class="details">
             <p class="count">4hrs</p>
@@ -82,11 +104,13 @@
           </div>
         </div>
       </section>
-      <section class="activity social">
+      <section class="activity social" aria-labelledby="social-title">
         <div>
           <div class="title-container">
             <p class="title">Social</p>
-            <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            <img
+              src="./images/icon-ellipsis.svg"
+              alt="More options for Social" />
           </div>
           <div class="details">
             <p class="count">5hrs</p>
@@ -94,11 +118,13 @@
           </div>
         </div>
       </section>
-      <section class="activity self-care">
+      <section class="activity self-care" aria-labelledby="self-care-title">
         <div>
           <div class="title-container">
             <p class="title">Self Care</p>
-            <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            <img
+              src="./images/icon-ellipsis.svg"
+              alt="More options for Self care" />
           </div>
           <div class="details">
             <p class="count">2hrs</p>
