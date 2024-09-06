@@ -29,30 +29,29 @@
             <h1>Jeremy Robson</h1>
           </figcaption>
         </figure>
-        <ul aria-label="Timeframes">
+        <ul role="tablist" aria-label="Timeframes">
           <li>
-            <button type="button" aria-pressed="false" tabindex="0">
+            <button type="button" role="tab" aria-selected="false">
               Daily
             </button>
           </li>
           <li>
-            <button
-              class="active"
-              type="button"
-              aria-pressed="true"
-              tabindex="0">
+            <button class="active" type="button" role="tab" aria-pressed="true">
               Weekly
             </button>
           </li>
           <li>
-            <button type="button" aria-pressed="false" tabindex="0">
+            <button type="button" role="tab" aria-selected="false">
               Monthly
             </button>
           </li>
         </ul>
       </section>
 
-      <section class="activity work" aria-labelledby="work-title">
+      <section
+        class="activity work"
+        role="tabpanel"
+        aria-labelledby="work-title">
         <div>
           <div class="title-container">
             <p class="title">Work</p>
@@ -62,12 +61,15 @@
               tabindex="0" />
           </div>
           <div class="details">
-            <p class="count">32hrs</p>
-            <span>Last Week - 36hrs</span>
+            <p class="count"></p>
+            <span></span>
           </div>
         </div>
       </section>
-      <section class="activity play" aria-labelledby="play-title">
+      <section
+        class="activity play"
+        role="tabpanel"
+        aria-labelledby="play-title">
         <div>
           <div class="title-container">
             <p class="title">Play</p>
@@ -82,7 +84,10 @@
           </div>
         </div>
       </section>
-      <section class="activity study" aria-labelledby="study-title">
+      <section
+        class="activity study"
+        role="tabpanel"
+        aria-labelledby="study-title">
         <div>
           <div class="title-container">
             <p class="title">Study</p>
@@ -97,7 +102,10 @@
           </div>
         </div>
       </section>
-      <section class="activity exercise" aria-labelledby="exercise-title">
+      <section
+        class="activity exercise"
+        role="tabpanel"
+        aria-labelledby="exercise-title">
         <div>
           <div class="title-container">
             <p class="title">Exercise</p>
@@ -112,7 +120,10 @@
           </div>
         </div>
       </section>
-      <section class="activity social" aria-labelledby="social-title">
+      <section
+        class="activity social"
+        role="tabpanel"
+        aria-labelledby="social-title">
         <div>
           <div class="title-container">
             <p class="title">Social</p>
@@ -127,7 +138,10 @@
           </div>
         </div>
       </section>
-      <section class="activity self-care" aria-labelledby="self-care-title">
+      <section
+        class="activity self-care"
+        role="tabpanel"
+        aria-labelledby="self-care-title">
         <div>
           <div class="title-container">
             <p class="title">Self Care</p>
